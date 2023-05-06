@@ -8,21 +8,25 @@
 import SwiftUI
 
 struct TabBarView: View {
-    @State private var selectedTab = "One"
+    @State private var selectedTab = 0
 
     var body: some View {
         TabView(selection: $selectedTab) {
             Text("Page 1")
                 .tabItem {
-                    Image(systemName: "circle")
-                    Text("One")
+                    Image("tab_find_recipes")
+                        .renderingMode(.template)
+                    Text("Find Recipes")
                 }
+                .tag(0)
             
             Text("Page 2")
                 .tabItem {
-                    Image(systemName: "circle")
-                    Text("Two")
+                    Image("tab_food_content")
+                        .renderingMode(.template)
+                    Text("Food Content")
                 }
+                .tag(1)
         }
     }
 }
