@@ -13,6 +13,10 @@
 		265E79822A06DBB20020ACF4 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E79812A06DBB20020ACF4 /* TabBarView.swift */; };
 		265E79852A06E2080020ACF4 /* FindRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E79842A06E2080020ACF4 /* FindRecipesView.swift */; };
 		265E79882A06E26B0020ACF4 /* FoodContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E79872A06E26B0020ACF4 /* FoodContentView.swift */; };
+		265E798A2A06E3B70020ACF4 /* FoodContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E79892A06E3B70020ACF4 /* FoodContentViewModel.swift */; };
+		265E798C2A06E41C0020ACF4 /* FindRecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E798B2A06E41C0020ACF4 /* FindRecipesViewModel.swift */; };
+		265E798F2A06F2220020ACF4 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E798E2A06F2220020ACF4 /* RecipeCell.swift */; };
+		265E79922A06F2570020ACF4 /* RecipeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E79912A06F2570020ACF4 /* RecipeItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		265E79812A06DBB20020ACF4 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		265E79842A06E2080020ACF4 /* FindRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRecipesView.swift; sourceTree = "<group>"; };
 		265E79872A06E26B0020ACF4 /* FoodContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodContentView.swift; sourceTree = "<group>"; };
+		265E79892A06E3B70020ACF4 /* FoodContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodContentViewModel.swift; sourceTree = "<group>"; };
+		265E798B2A06E41C0020ACF4 /* FindRecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRecipesViewModel.swift; sourceTree = "<group>"; };
+		265E798E2A06F2220020ACF4 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		265E79912A06F2570020ACF4 /* RecipeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +100,10 @@
 		265E79832A06E1F40020ACF4 /* FindRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				265E79902A06F2460020ACF4 /* Models */,
+				265E798D2A06F2190020ACF4 /* Cells */,
 				265E79842A06E2080020ACF4 /* FindRecipesView.swift */,
+				265E798B2A06E41C0020ACF4 /* FindRecipesViewModel.swift */,
 			);
 			path = FindRecipes;
 			sourceTree = "<group>";
@@ -101,8 +112,25 @@
 			isa = PBXGroup;
 			children = (
 				265E79872A06E26B0020ACF4 /* FoodContentView.swift */,
+				265E79892A06E3B70020ACF4 /* FoodContentViewModel.swift */,
 			);
 			path = FoodContent;
+			sourceTree = "<group>";
+		};
+		265E798D2A06F2190020ACF4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				265E798E2A06F2220020ACF4 /* RecipeCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		265E79902A06F2460020ACF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				265E79912A06F2570020ACF4 /* RecipeItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +205,12 @@
 			files = (
 				265E79852A06E2080020ACF4 /* FindRecipesView.swift in Sources */,
 				265E79822A06DBB20020ACF4 /* TabBarView.swift in Sources */,
+				265E79922A06F2570020ACF4 /* RecipeItem.swift in Sources */,
 				265E79882A06E26B0020ACF4 /* FoodContentView.swift in Sources */,
+				265E798F2A06F2220020ACF4 /* RecipeCell.swift in Sources */,
 				265E79722A06DAF80020ACF4 /* RecipeMakerApp.swift in Sources */,
+				265E798A2A06E3B70020ACF4 /* FoodContentViewModel.swift in Sources */,
+				265E798C2A06E41C0020ACF4 /* FindRecipesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

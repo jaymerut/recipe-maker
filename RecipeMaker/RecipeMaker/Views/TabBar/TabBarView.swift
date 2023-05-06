@@ -11,8 +11,8 @@ struct TabBarView: View {
     @State private var selectedTab = 0
 
     var body: some View {
-        TabView(selection: $selectedTab) {
-            FindRecipesView()
+        return TabView(selection: $selectedTab) {
+            FindRecipesView(viewModel: .init())
                 .tabItem {
                     Image("tab_find_recipes")
                         .renderingMode(.template)
@@ -20,7 +20,7 @@ struct TabBarView: View {
                 }
                 .tag(0)
             
-            FoodContentView()
+            FoodContentView(viewModel: .init())
                 .tabItem {
                     Image("tab_food_content")
                         .renderingMode(.template)
