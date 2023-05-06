@@ -27,14 +27,18 @@ struct FindRecipesView: View {
                     .padding(.leading, 4)
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.black, lineWidth: 1)
                              )
-                Image("search")
-                    .renderingMode(.template)
-                    .resizable()
-                    .padding(7)
-                    .background(.green)
-                    .foregroundColor(.white)
-                    .frame(width: 39.0, height: 40.0)
-                    .cornerRadius(8, corners: [.topRight, .bottomRight])
+                Button {
+                        
+                } label: {
+                    Image("search")
+                        .renderingMode(.template)
+                        .resizable()
+                        .padding(7)
+                        .background(.green)
+                        .foregroundColor(.white)
+                        .frame(width: 39.0, height: 40.0)
+                        .cornerRadius(8, corners: [.topRight, .bottomRight])
+                }
             }
             
             Spacer()
