@@ -22,11 +22,11 @@ struct FindRecipesView: View {
             }
             ZStack(alignment: .trailing) {
                 TextField("Enter one or more keywords", text: $textValue)
-                    .textFieldStyle(.roundedBorder)
-                    .padding(4)
+                    .textFieldStyle(.plain)
+                    .padding(10)
                     .padding(.leading, 4)
-                    .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.black, lineWidth: 1)
-                             )
+                    .accentColor(.black)
+                    .background(RoundedRectangle(cornerRadius: 8).stroke(Color.black, lineWidth: 1))
                 Button {
                     print("Button Pressed")
                 } label: {
