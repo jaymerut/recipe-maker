@@ -45,7 +45,7 @@ struct FindRecipesView: View {
                 ForEach(viewModel.recipes) { item in
                     Section {
                         RecipeCell(item: item)
-                            .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
+                            .listRowInsets(.init(top: 5, leading: 0, bottom: 5, trailing: 0))
                             .listRowSeparator(.hidden)
                             .background(.blue)
                     }
