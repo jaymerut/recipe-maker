@@ -12,7 +12,7 @@ struct TabBarView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            FindRecipesView()
+            FindRecipesView(viewModel: .init())
                 .tabItem {
                     Image("tab_find_recipes")
                         .renderingMode(.template)
@@ -20,7 +20,7 @@ struct TabBarView: View {
                 }
                 .tag(0)
             
-            FoodContentView()
+            FoodContentView(viewModel: .init())
                 .tabItem {
                     Image("tab_food_content")
                         .renderingMode(.template)
