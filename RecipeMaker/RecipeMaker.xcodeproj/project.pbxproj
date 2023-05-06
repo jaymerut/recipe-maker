@@ -11,6 +11,8 @@
 		265E79762A06DAF80020ACF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265E79752A06DAF80020ACF4 /* Assets.xcassets */; };
 		265E79792A06DAF80020ACF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265E79782A06DAF80020ACF4 /* Preview Assets.xcassets */; };
 		265E79822A06DBB20020ACF4 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E79812A06DBB20020ACF4 /* TabBarView.swift */; };
+		265E79852A06E2080020ACF4 /* FindRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E79842A06E2080020ACF4 /* FindRecipesView.swift */; };
+		265E79882A06E26B0020ACF4 /* FoodContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E79872A06E26B0020ACF4 /* FoodContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		265E79752A06DAF80020ACF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		265E79782A06DAF80020ACF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		265E79812A06DBB20020ACF4 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		265E79842A06E2080020ACF4 /* FindRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRecipesView.swift; sourceTree = "<group>"; };
+		265E79872A06E26B0020ACF4 /* FoodContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 		265E797F2A06DBA20020ACF4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				265E79862A06E25E0020ACF4 /* FoodContent */,
+				265E79832A06E1F40020ACF4 /* FindRecipes */,
 				265E79802A06DBA70020ACF4 /* TabBar */,
 			);
 			path = Views;
@@ -81,6 +87,22 @@
 				265E79812A06DBB20020ACF4 /* TabBarView.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		265E79832A06E1F40020ACF4 /* FindRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				265E79842A06E2080020ACF4 /* FindRecipesView.swift */,
+			);
+			path = FindRecipes;
+			sourceTree = "<group>";
+		};
+		265E79862A06E25E0020ACF4 /* FoodContent */ = {
+			isa = PBXGroup;
+			children = (
+				265E79872A06E26B0020ACF4 /* FoodContentView.swift */,
+			);
+			path = FoodContent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265E79852A06E2080020ACF4 /* FindRecipesView.swift in Sources */,
 				265E79822A06DBB20020ACF4 /* TabBarView.swift in Sources */,
+				265E79882A06E26B0020ACF4 /* FoodContentView.swift in Sources */,
 				265E79722A06DAF80020ACF4 /* RecipeMakerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
