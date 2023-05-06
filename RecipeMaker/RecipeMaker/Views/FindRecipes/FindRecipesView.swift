@@ -28,7 +28,7 @@ struct FindRecipesView: View {
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.black, lineWidth: 1)
                              )
                 Button {
-                        
+                    print("Button Pressed")
                 } label: {
                     Image("search")
                         .renderingMode(.template)
