@@ -11,7 +11,7 @@ struct TabBarView: View {
     @State private var selectedTab = 0
 
     var body: some View {
-        TabView(selection: $selectedTab) {
+        return TabView(selection: $selectedTab) {
             FindRecipesView(viewModel: .init())
                 .tabItem {
                     Image("tab_find_recipes")

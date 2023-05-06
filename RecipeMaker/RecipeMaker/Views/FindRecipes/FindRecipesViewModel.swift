@@ -9,6 +9,13 @@ import Foundation
 
 extension FindRecipesView {
     class ViewModel: ObservableObject {
+        var recipes: [RecipeItem] = [RecipeItem]()
         
+        init() {
+            self.recipes = [
+                RecipeItem(name: "First"),
+                RecipeItem(name: "Second")
+            ]
+        }
     }
 }

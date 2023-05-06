@@ -41,16 +41,29 @@ struct FindRecipesView: View {
                 }
             }
             
-            Spacer()
+            List {
+                ForEach(viewModel.recipes) { item in
+                    Section {
+                        RecipeCell(item: item)
+                            .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
+                            .listRowSeparator(.hidden)
+                            .background(.blue)
+                    }
+                    .cornerRadius(8)
+                    
+                }
+            }
+            .listStyle(PlainListStyle())
+            .padding(.top, 10)
         }
-        .padding(.vertical, 30)
+        .padding(.top, 30)
         .padding(.horizontal, 20)
     }
 }
 
 struct FindRecipesView_Previews: PreviewProvider {
     static var previews: some View {
-        FindRecipesView(viewModel: .init())
+        return FindRecipesView(viewModel: .init())
     }
 }
 
