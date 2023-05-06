@@ -50,7 +50,6 @@ struct FindRecipesView: View {
                             .background(.blue)
                     }
                     .cornerRadius(8)
-                    
                 }
             }
             .listStyle(PlainListStyle())
