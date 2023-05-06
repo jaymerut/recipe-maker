@@ -1,5 +1,5 @@
 //
-//  RecipeCell.swift
+//  FoodContentCell.swift
 //  RecipeMaker
 //
 //  Created by Jayme Rutkoski on 5/6/23.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct RecipeCell: View {
-    @ObservedObject var item: RecipeItem
+struct FoodContentCell: View {
+    @ObservedObject var item: FoodContentItem
     
     var body: some View {
         ZStack {
@@ -22,8 +22,8 @@ struct RecipeCell: View {
     }
 }
 
-struct RecipeCell_Previews: PreviewProvider {
+struct FoodContentCell_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeCell(item: .init(name: "Test"))
+        FoodContentCell(item: .init(name: "Test"))
     }
 }
