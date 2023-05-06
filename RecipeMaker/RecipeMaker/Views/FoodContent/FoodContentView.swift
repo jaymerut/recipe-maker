@@ -16,12 +16,14 @@ struct FoodContentView: View {
         VStack(alignment: .center) {
             Text("Food Content")
             HStack(alignment: .center) {
-                Label("Keywords", image: "")
-                    .padding(.leading, -7)
+                Text("Enter what you've eaten to see the nutrient facts.")
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity, alignment: .center)
                 Spacer()
             }
+            .padding(.top, 5)
             ZStack(alignment: .trailing) {
-                TextField("Enter one or more keywords", text: $textValue)
+                TextField("e.g (eggs and toast)", text: $textValue)
                     .textFieldStyle(.roundedBorder)
                     .padding(4)
                     .padding(.leading, 4)
