@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FoodContentView: View {
 
+    @ObservedObject var viewModel: ViewModel
+    
     var body: some View {
         VStack {
             Text("Food Content")
@@ -18,6 +20,6 @@ struct FoodContentView: View {
 
 struct FoodContentView_Previews: PreviewProvider {
     static var previews: some View {
-        FoodContentView()
+        FoodContentView(viewModel: .init())
     }
 }

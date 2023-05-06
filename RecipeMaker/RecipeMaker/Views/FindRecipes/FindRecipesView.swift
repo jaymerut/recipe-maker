@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FindRecipesView: View {
 
+    @ObservedObject var viewModel: ViewModel
+    
     var body: some View {
         VStack {
             Text("Find Recipes")
@@ -18,6 +20,6 @@ struct FindRecipesView: View {
 
 struct FindRecipesView_Previews: PreviewProvider {
     static var previews: some View {
-        FindRecipesView()
+        FindRecipesView(viewModel: .init())
     }
 }
