@@ -30,7 +30,7 @@ struct FindRecipesView: View {
                 Image("search")
                     .renderingMode(.template)
                     .resizable()
-                    .padding(5)
+                    .padding(7)
                     .background(.green)
                     .foregroundColor(.white)
                     .frame(width: 39.0, height: 40.0)
